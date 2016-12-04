@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+
+
+        <!--Jquery Stuff because Bootstrap got angry when I didn't have it-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!--Bootstrap-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!--My Scripts-->
+        <script type="text/javascript" src="../js/questions.js"></script>
+
+        <script type="text/javascript" src="../js/gamePlay.js"></script>
+
+        <link rel="stylesheet" href="../css/gamestyle.css" type="text/css" />
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+
+        <title>Rick and Morty Quiz</title>
+
+    </head>
+
+    <body onload="loadScreen();">
+        <div class="container">
+            <div class='page-header clearfix'>
+                <h3>Project 3 - CS 2803</h3>
+                <h2> Cody Trawick </h2>
+            </div>
+        </div>
+
+        <div class='jumbotron'>
+            <div class="container">
+                <h1 id='questionNumber'> Rick and Morty Quiz!</h1>
+                <p id='q'> Questions will appear here. See how many you can get correct!</p>
+            </div>
+        </div>
+
+        <div id='stuff' class='container'>
+
+
+
+            <div id='prompt' class='panel'>
+                <p>The answer choices will appear below. Once the quiz begins, select the best answer for each question</p>
+                <button type='button' class='btn btn-success' onclick='startGame();'> Let's get started!</button>
+            </div>
+
+            <div>
+                <div id='progress' class='progress'>
+                    <div class='progress-bar' role='progressbar' style='100%'></div>
+
+                </div>
+                <div id='answerChoices' class="container col-sm-6">
+                    <button id='a1' type='button' class='btn btn-block' disabled='disabled' onclick='checkAnswer("a1");'> Answer A </button>
+                    <button id='a2' type='button' class='btn btn-block' disabled='disabled' onclick='checkAnswer("a2");'> Answer B </button>
+                    <button id='a3' type='button' class='btn btn-block' disabled='disabled' onclick='checkAnswer("a3");'> Answer C </button>
+                    <button id='a4' type='button' class='btn btn-block' disabled='disabled' onclick='checkAnswer("a4");'> Answer D </button>
+                </div>
+                <div id='side' class="container col-sm-6">
+                    <img id='imageDisplay' src="../img/intro.jpg" class='img-responsive img-rounded'></img>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+
+    </html>

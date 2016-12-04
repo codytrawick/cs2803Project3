@@ -1,0 +1,42 @@
+body {
+    /*background-image: url(../img/stars.jpg);*/
+    background-color: rgb(207, 204, 244);
+    font-family: 'Rock Salt', cursive;
+
+}
+
+#stuff {
+    padding-top: 25px;
+}
+
+#prompt {
+    text-align: center;
+    padding: 10px;
+}
+
+#answerChoices {
+    min-height: 45vh;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.container {
+    background-color: #fff;
+    margin-top: 0px;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+.jumbotron .container {
+    background-color: inherit;
+}
+
+.btn-block {
+    min-height: 75px
+}
+
+img {
+    margin: 0px auto;
+}
